@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <FrameLayout
+        android:id="@+id/themFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_background"
+                android:fitsSystemWindows="true">
+
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collaps_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_width="match_parent"
+                        app:theme="@style/textitemmenu"
+                        app:layout_scrollFlags="scroll|enterAlways"
+                        app:layout_collapseMode="pin"
+                        android:layout_marginBottom="20dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/lnsearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/background_search"
+                        app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed|snap"
+                        app:layout_collapseMode="parallax">
+
+                        <Button
+                            android:id="@+id/btnTimkiem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_search"
+                            android:hint="Tìm kiếm"
+                            android:layout_gravity="start"
+                            android:textAlignment="viewStart"
+                            android:textSize="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_bgsearch"
+                            android:paddingLeft="10dp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_background"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_photo_camera"
+                            android:background="@drawable/selector_bgsearch"/>
+                    </LinearLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablauout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="scrollable"
+                    app:tabTextColor="#CCC"
+                    app:tabTextAppearance="@style/capfalse">
+
+                </android.support.design.widget.TabLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+            </FrameLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </FrameLayout>
+
+
+
+
+    <ExpandableListView
+        android:id="@+id/epmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFF"
+        android:choiceMode="multipleChoice"
+        android:groupIndicator="@null"
+        android:paddingTop="20dp">
+    </ExpandableListView>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itsearch"
+        android:title="search"
+        android:icon="@drawable/icon_search_white"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/itshoppingcart"
+        android:title="shoppingcart"
+        android:icon="@drawable/icon_shopping_cart"
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_item_shopping_cart"/>
+
+    <item
+        android:icon="@drawable/icon_more_vert"
+        android:title="more"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/itlogin"
+                android:title="Đăng nhập"
+                android:icon="@drawable/icon_login"/>
+
+            <item
+                android:id="@+id/itnoti"
+                android:title="Thông báo"
+                android:icon="@drawable/icon_notifications_black"/>
+
+            <item
+                android:id="@+id/itfavourite"
+                android:title="Danh sách yêu thích"
+                android:icon="@drawable/icon_favorite_black"/>
+
+            <item
+                android:id="@+id/itconten"
+                android:title="Đơn hàng của tôi"
+                android:icon="@drawable/icon_content_paste_black"/>
+
+            <item
+                android:id="@+id/itsetting"
+                android:title="Cài đặt"
+                android:icon="@drawable/icon_settings_black"/>
+
+            <item
+                android:id="@+id/itlaw"
+                android:title="Chính sách"
+                android:icon="@drawable/icon_note_black"/>
+
+            <item
+                android:id="@+id/ithelp"
+                android:title="Trợ giúp"
+                android:icon="@drawable/icon_help_outline_black"/>
+
+            <item
+                android:id="@+id/itlogout"
+                android:title="Đăng xuất"
+                android:icon="@drawable/icon_logout"
+                android:visible="false"/>
+
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shopthree">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".View.ChiTietDonHang.ChiTietDonHangActivity"
+            android:label="Chi tiết đơn hàng"/>
+        <activity
+            android:name=".View.TheoDoiDonHang.ThoidoidonhangActivity"
+            android:label="Đơn hàng của tôi" />
+        <activity
+            android:name=".View.TimKiem.TimKiemActivity"
+            android:label="" />
+        <activity
+            android:name=".View.ThanhToan.ThanhToanActivity"
+            android:label="Thanh toán" />
+        <activity
+            android:name=".View.GioHang.GioHangActivity"
+            android:label="Giỏ hàng" />
+        <activity android:name=".View.DanhGia.DanhSachDanhGiaActivity" />
+        <activity
+            android:name=".View.DanhGia.DanhGiaActivity"
+            android:label="Đánh giá sản phẩm"
+            android:theme="@style/Base.Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".View.ChiTietSanPham.ChiTietSanPhamActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".View.HienThiSanPhamTheoDanhMuc.HienThiSanPhamTheoDanhMucActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".View.DangNhap_DangKy.DangNhapActivity"
+            android:label="Đăng nhập/Đăng ký"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.ManHinhChao.ManhinhchaoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.TrangChu.TrangchuActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
